@@ -239,31 +239,27 @@
         border-radius: 4px;
     }
 
-    /* ⭐ 재수정된 참고 사이트 디자인 모방 박스 스타일 ⭐ */
+    /* ⭐ 참고 사이트의 힌트 박스 디자인을 정확히 가져온 스타일 ⭐ */
     .mission-clue-box {
         position: relative;
-        background-color: #fcf6e8; /* 매우 밝은 황토색 배경 */
-        color: #724e2d; /* 진한 갈색 텍스트 */
-        border: 1px solid #e7d1b3; /* 테두리 색상 조정 */
-        border-radius: 8px; /* 둥근 모서리 */
-        padding: 15px 15px 15px 45px; /* 왼쪽에 패딩 추가하여 아이콘 공간 확보 */
+        /* 참고 사이트의 배경색과 테두리 색상 */
+        background-color: #ffe8cc; 
+        border: 1px solid #e0c29f; 
+        border-radius: 6px; 
+        
+        /* 텍스트 스타일 */
+        color: #724e2d; 
+        padding: 12px 15px;
         margin: 15px 0;
         font-size: 0.95rem;
         line-height: 1.6;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* 은은한 그림자 */
+        
+        /* 참고 사이트의 그림자 효과를 모방 */
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); 
+        
+        /* 왼쪽 아이콘 대신, 텍스트 시작점을 맞추기 위한 여백만 사용 */
     }
-
-    /* 아이콘 시각 효과 (참고 사이트의 💡 또는 힌트 시각 효과 모방) */
-    .mission-clue-box::before {
-        content: "💡"; /* 전구 이모지 사용 */
-        position: absolute;
-        left: 15px;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 1.2rem;
-        color: #d89e5d; /* 아이콘 색상을 강조 */
-    }
-
+    
     .mission-clue-box div {
         margin: 0;
         white-space: pre-line;
